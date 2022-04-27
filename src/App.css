@@ -7,7 +7,13 @@
 html, body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: darkslategray;
-  background: #efe6e6;
+  background: #f9e4f2;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+
 }
 
 /* Headers */
@@ -18,32 +24,63 @@ html, body {
 
 /* Navbar */
 .navbar {
-  background: darkslategray;
+  background: #be0383;
   color: #efe6e6;
   padding: 1rem;
+}
+
+.navbar-container {
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navlinks {
+.nav-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
 }
 
-.navlinks a {
+.logo-link,
+.nav-links a {
   text-decoration: none;
   color: #efe6e6;
   padding: 0.5rem;
 }
 
 /* Footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #9f026e;
+  color: #efe6e6;
+  padding: 1rem;
+}
 
+.footer-container {
+  width: 90%;
+  margin: auto;
+}
 
 /* Home */
 
+
+/* Videos */
+.video-content {
+  padding: 3rem 2rem;
+}
+
+.video-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
 
 /* About */
 
