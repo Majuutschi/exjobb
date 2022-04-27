@@ -7,7 +7,7 @@ const Navbar = () => {
         <a className='logo-link' href="">Irene Wickman Assistanshundar</a>
         <ul className='nav-links'>
           <li><a href="#">Assistanshundar</a></li>
-          <li><a href="#">Filmer - assistanshundbeteenden</a></li>
+          <li><a href="#">Assistanshundbeteenden</a></li>
           <li><a href="#">Träning av assistanshundar</a></li>
           <li><a href="#">Hunddagis och hundpensionat</a></li>
           <li><a href="#">Om mig</a></li>

@@ -6,27 +6,33 @@
 
 html, body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: darkslategray;
+  color: #740074;
   background: #f9e4f2;
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 
 }
 
 /* Headers */
-
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
 
 /* Buttons */
 
 
 /* Navbar */
 .navbar {
-  background: #be0383;
+  background: #9f026e;
   color: #efe6e6;
   padding: 1rem;
+  width: 100%;
 }
 
 .navbar-container {
@@ -38,9 +44,6 @@ html, body {
 }
 
 .nav-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   list-style: none;
 }
 
@@ -48,6 +51,7 @@ html, body {
 .nav-links a {
   text-decoration: none;
   color: #efe6e6;
+  font-size: 14px;
   padding: 0.5rem;
 }
 
@@ -58,7 +62,7 @@ html, body {
   bottom: 0;
   width: 100%;
   text-align: center;
-  background: #9f026e;
+  background: #780253;
   color: #efe6e6;
   padding: 1rem;
 }
@@ -78,10 +82,99 @@ html, body {
 
 .video-section {
   display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.youtube-video-container {
+  margin-bottom: 0.5rem;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+.youtube-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* About */
 
 
+@media only screen and (min-width: 768px) {
+  
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 80%;
+  }
+  
+
+  /* Headers */
+  h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+
+  /* Navbar */
+
+  .navbar-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .logo-link,
+  .nav-links a {
+    text-decoration: none;
+    color: #efe6e6;
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+  
+  /* Videos */
+  .video-content {
+    padding: 2rem 1rem;
+  }
+
+  .video-section {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  /* Videos */
+  .video-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .youtube-video-container {
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+    padding-top: 56.25%;
+  }
+}
