@@ -19,9 +19,13 @@ html, body {
 /* Headers */
 h1 {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   text-align: center;
   font-size: 1.3rem;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
 }
 
 /* Buttons */
@@ -70,6 +74,17 @@ h1 {
 .footer-container {
   width: 90%;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social i {
+  margin-left: 2rem;
+  color: #efe6e6;
+}
+.social i:hover {
+  color: #edb8e8;
 }
 
 /* Home */
@@ -103,6 +118,38 @@ h1 {
   text-align: center;
 }
 
+
+
+/* Dogs */
+.dogs-img {
+  padding: 1rem;
+}
+
+.dogs-img img {
+  border-radius: 8px;
+}
+
+.dogs-text {
+  padding: 0 2rem;
+}
+
+.dogs-list {
+  list-style: none;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.dogs-list-item {
+  margin-bottom: 0.5rem;
+}
+
+.dogs-list-item span {
+  color: #5a025a;
+  font-weight: bold;
+}
+
+
+
 /* Videos */
 .video-content {
   padding: 3rem 2rem;
@@ -131,6 +178,43 @@ h1 {
   height: 100%;
   border: none;
 }
+
+
+
+/* Training */
+.three-pics {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.training-dog {
+  width: 30%;
+}
+
+.training-img img {
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+}
+
+.dog-desc {
+  width: 80%;
+  margin: auto;
+  margin-top: 0.5rem;
+
+}
+
+.training-text p {
+  margin-bottom: 0.9rem;
+}
+
+.for-sale {
+  padding-bottom: 0.5rem;
+  font-size: small;
+}
+
+
 
 /* Daycare */
 .daycare-image {
@@ -162,7 +246,29 @@ h1 {
   list-style: none;
 }
 
+
+
 /* About */
+.about-img img {
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+}
+
+.about-text {
+  padding: 0.5rem 2rem;
+}
+
+.about-text p {
+  margin-bottom: 0.5rem;
+}
+
+
+
+/* Connect */
+
+
+
 
 
 @media only screen and (min-width: 768px) {
@@ -182,7 +288,6 @@ h1 {
   /* Headers */
   h1 {
     margin-top: 1rem;
-    margin-bottom: 1rem;
     font-size: 2rem;
   }
 
