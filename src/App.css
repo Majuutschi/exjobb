@@ -42,6 +42,8 @@ h4 {
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 .btn:hover {
@@ -102,6 +104,8 @@ h4 {
 .social i {
   margin-left: 2rem;
   color: #efe6e6;
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 .social i:hover {
   color: #edb8e8;
@@ -118,11 +122,14 @@ h4 {
 
 .choice {
   background: #7802533b;
-  border: 1px solid #780253;
+  border: 1px solid transparent;
   border-radius: 8px;
+  box-shadow: 1px 1px 5px #2a002a63;
   padding: 2rem;
   cursor: pointer;
   width: 40%;
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 .choice:hover {
@@ -132,6 +139,7 @@ h4 {
 .choice-image img {
   border-radius: 8px;
   width: 100%;
+  
 }
 
 .choice-title {
