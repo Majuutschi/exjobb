@@ -16,7 +16,7 @@ const Home = () => {
           </div>
           <div className='choice'>
             <div className='choice-image'>
-              <img src={require('../images/hunddagis1.jpg')} alt="" />
+              <img src={require('../images/hunddagis11.jpg')} alt="" />
             </div>
             <div className='choice-title'>
               <h4>Hunddagis och hundpensionat</h4>

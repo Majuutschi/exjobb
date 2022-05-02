@@ -126,6 +126,7 @@ h4 {
   border-radius: 8px;
   box-shadow: 1px 1px 5px #2a002a63;
   padding: 2rem;
+  padding-bottom: 1rem;
   cursor: pointer;
   width: 40%;
   -webkit-transition: .3s ease-in-out;
@@ -139,11 +140,28 @@ h4 {
 .choice-image img {
   border-radius: 8px;
   width: 100%;
-  
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.choice-image img:hover {
+  -webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 .choice-title {
   text-align: center;
+  margin-top: 1rem;
+}
+
+
+
+/* Dogtraining */
+.pink {
+  background: rgb(249,228,242);
+  background: linear-gradient(180deg, #f9e4f2 0%, #da68bd 30%, #d443b1 50%, #da68bd 70%, #f9e4f2 100%);
 }
 
 
