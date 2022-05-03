@@ -59,6 +59,9 @@ h4 {
   color: #efe6e6;
   padding: 1rem;
   width: 100%;
+  /* position: fixed;
+  top: 0;
+  transition: top 0.3s; */
 }
 
 .navbar-container {
@@ -135,6 +138,14 @@ h4 {
 
 .choice:hover {
   background: #ed92d280;
+}
+
+.choice a {
+  text-decoration: none;
+}
+
+.choice a:focus {
+  color: rgb(242, 69, 202);
 }
 
 .choice-image img {
@@ -367,14 +378,18 @@ h4 {
 }
 
 .connect-items {
-  display: flex;
-  justify-content: space-around;
+  display: block;
   align-items: center;
+}
+
+.connect-item {
+  margin-bottom: 1rem;
 }
 
 .connect-item a {
   text-decoration: none;
   color: #740074;
+  
 }
 
 .connect-map {
