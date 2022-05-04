@@ -13,18 +13,21 @@ import Connect from './views/Connect';
 const App = () => (
   
   <Router>
-    <Navbar />
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/dogtraining' element={<Dogtraining />} />
-      <Route path='/daycare' element={<Daycare />} />
-      <Route path='/about' element={<About />} />
-      <Route path='/connect' element={<Connect />} />
+    <div id='page-container'>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/dogtraining' element={<Dogtraining />} />
+        <Route path='/daycare' element={<Daycare />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/connect' element={<Connect />} />
 
-      {/* <Route path='*' element={<NotFound />} /> */}
-    </Routes>
+        {/* <Route path='*' element={<NotFound />} /> */}
+      </Routes>
+      
+      <Footer />
+    </div>
     
-    <Footer />
   </Router>
 )
 
