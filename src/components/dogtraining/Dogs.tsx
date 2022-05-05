@@ -7,22 +7,25 @@ const Dogs = () => {
         <div className='content'>
           <h1>Assistanshundar</h1>
 
-          <div className='three-pics'>
-            <div className='dogs-img'>
+          {/* <div className='dogs-list'> */}
+            {/* <div className='dogs-img'>
               <img src={require('../../images/dog1.jpg')} alt="" />
-            </div>
-            <div className='dogs-img'>
+            </div> */}
+            {/* <div className='dogs-img'>
               <img src={require('../../images/dog2.jpg')} alt="" />
-            </div>
-            <div className='dogs-img'>
+            </div> */}
+            {/* <div className='dogs-img'>
               <img src={require('../../images/dog3.jpg')} alt="" />
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
 
           <div className='dogs-text'>
             <p>Assistanshundar är ett ord för flera olika hundar. Det finns:</p>
 
             <ul className='dogs-list'>
+              <div className='dogs-img img-a'>
+                <img src={require('../../images/dog12.jpg')} alt="" />
+              </div>
               <li className='dogs-list-item'>
                 <h3>Servicehundar</h3>
                 <p>Hjälper funktionsnedsatta med att hämta saker, öppna och stänga dörrar mm.</p> 
@@ -31,29 +34,27 @@ const Dogs = () => {
                 <h3>Signalhundar</h3>
                 <p>Hjälper de som är hörselskadade med att höra olika ljud. T.ex. om någon ropar, telefonen ringer eller om någon ringer på dörren, brandlarmet mm.</p>
               </li>
-              <li className='dogs-list-item'>
-                <h3>Alarmerande assistanshundar</h3> 
-                <p>Diabetes och epilepsihundar</p>
-              </li>
-              <li className='dogs-list-item'>
-                <h3>Diabeteshundar</h3>
+              <li className='dogs-list-item long-text-b'>
+                <h3>Alarmerande assistanshundar</h3>
+                <h4>Diabeteshundar</h4>
                 <p>Larmar sin ägare vid antingen för lågt eller för högt blodsocker eller både och. Hunden känner doften från ägarens mun och puttar på ägaren så den kan ta medicin eller något att äta.</p>
-              </li>
-              <li className='dogs-list-item'>
-                <h3>Epilepsihundar</h3>
+                <h4>Epilepsihundar</h4>
                 <p>Larmar vid anfall. Ibland även innan ett anfall.</p>
               </li>
+              <div className='dogs-img img-b'>
+                <img src={require('../../images/dog2.jpg')} alt="" />
+              </div>
               <li className='dogs-list-item'>
                 <h3>Ledarhundar</h3>
                 <p>Hjälper de synskadade i att leda dem förbi hinder och hitta olika platser.</p>
               </li>
+              <li className='dogs-list-item long-text-c'>
+                <h3>Servicehund för personer med synnedsättning</h3>
+                <p>Hjälper sin ägare att ta sig fram runt hinder och är även en servicehund samtidigt. För personer som inte är gravt synskadade så de är berättigade till en ledarhund.</p>
+              </li>
               <li className='dogs-list-item'>
                 <h3>Assistanshund för psykisk hälsa</h3>
                 <p>Hjälper och stöttar sin ägare i jobbiga situationer så som för mycket folk, läkarbesök mm.</p>
-              </li>
-              <li className='dogs-list-item'>
-                <h3>Servicehund för personer med synnedsättning</h3>
-                <p>Hjälper sin ägare att ta sig fram runt hinder och är även en servicehund samtidigt. För personer som inte är gravt synskadade så de är berättigade till en ledarhund.</p>
               </li>
             </ul>
 

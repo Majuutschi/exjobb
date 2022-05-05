@@ -11,24 +11,15 @@ const Training = () => {
               <div className='training-img'>
                 <img src={require('../../images/hero.jpg')} alt="" />
               </div>
-              <div className='dog-desc'>
-                <small>Det här är Hero som jag har tränat och som nu jobbar som assistanshund.</small>
-              </div>
             </div>
             <div className='training-dog'>
               <div className='training-img'>
                 <img src={require('../../images/clarkkent.jpg')} alt="" />
               </div>
-              <div className='dog-desc'>
-                <small>Det här är Clark-Kent som jag har tränat och som jobbar som assistanshund.</small>
-              </div>
             </div>
             <div className='training-dog'>
               <div className='training-img'>
-                <img src={require('../../images/Charlie.jpg')} alt="" />
-              </div>
-              <div className='dog-desc'>
-                <small>Det här är Charlie! Han jobbar nu som assistanshund.</small>
+                <img src={require('../../images/dog3.jpg')} alt="" />
               </div>
             </div>
           </div>

@@ -20,6 +20,7 @@ html, body {
 .container {
   width: 90%;
   margin: auto;
+  margin-top: 5rem;
   padding-bottom: 1rem;
 }
 
@@ -72,11 +73,22 @@ p {
   background: #9f026e;
   color: #efe6e6;
   border-bottom: 1px solid #8e0262;
+  height: 5rem;
   padding: 1rem;
   width: 100%;
-  /* position: fixed;
+  position: fixed;
   top: 0;
-  transition: top 0.3s; */
+  transition: 0.3s linear;
+  z-index: 40;
+}
+
+.hidden {
+  height: 5rem;
+  width: 100%;
+  z-index: 40;
+  position: fixed;
+  top: -80px;
+  transition: 0.3s linear;
 }
 
 .navbar-container {
@@ -186,7 +198,7 @@ p {
 /* Dogtraining */
 .pink {
   background: rgb(249,228,242);
-  background: linear-gradient(180deg, #f9e4f2 0%, #da68bd 30%, #d443b1 50%, #da68bd 70%, #f9e4f2 100%);
+  background: linear-gradient(180deg, rgba(249,228,242,1) 0%, rgba(170,29,126,1) 40%, rgba(159,2,110,1) 50%, rgba(170,29,126,1) 60%, rgba(249,228,242,1) 100%);
 }
 
 
@@ -194,6 +206,7 @@ p {
 /* Dogs */
 .dogs-img {
   padding: 1rem;
+  box-shadow: 1px 1px 5px #2a002a63;
 }
 
 .dogs-img img {
@@ -219,7 +232,8 @@ p {
 }
 
 .dogs-list-item {
-  border: 1px solid #fab9fa;
+  border: 1px solid transparent;
+  background: #ffe2ff;
   border-radius: 8px;
   box-shadow: 1px 1px 5px #2a002a63;
   padding: 1rem;
@@ -518,17 +532,63 @@ p {
 }
 
 @media only screen and (min-width: 1200px) {
+  .container {
+    width: 90%;
+  }
   
 
   /* Dogs */
   .dogs-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
     gap: 0.5rem 1rem;
     list-style: none;
     padding-left: 0.5rem;
     margin-bottom: 1rem;
   }
+
+  .dogs-img {
+    display: block;
+    justify-content: center;
+    padding: 0;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .dogs-img img {
+    width: 100%;
+  }
+
+  .img-a {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .img-b {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column: 4;
+  }
+
+  .long-text-b {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column: 2;
+  }
+
+  .long-text-b h4 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .long-text-c {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 3;
+  }
+
 
   /* Videos */
   .video-section {
@@ -567,5 +627,11 @@ p {
   
   .about-text p {
     margin-bottom: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    width: 80%;
   }
 }
