@@ -2,29 +2,17 @@ import React from 'react'
 
 const Dogs = () => {
   return (
-    <div className='light'>
+    <div id='dogs' className='light'>
       <div className='container'>
         <div className='content'>
           <h1>Assistanshundar</h1>
-
-          {/* <div className='dogs-list'> */}
-            {/* <div className='dogs-img'>
-              <img src={require('../../images/dog1.jpg')} alt="" />
-            </div> */}
-            {/* <div className='dogs-img'>
-              <img src={require('../../images/dog2.jpg')} alt="" />
-            </div> */}
-            {/* <div className='dogs-img'>
-              <img src={require('../../images/dog3.jpg')} alt="" />
-            </div> */}
-          {/* </div> */}
 
           <div className='dogs-text'>
             <p>Assistanshundar är ett ord för flera olika hundar. Det finns:</p>
 
             <ul className='dogs-list'>
               <div className='dogs-img img-a'>
-                <img src={require('../../images/dog12.jpg')} alt="" />
+                <img src={require('../../images/dog1.jpg')} alt="" />
               </div>
               <li className='dogs-list-item'>
                 <h3>Servicehundar</h3>
