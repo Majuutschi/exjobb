@@ -48,7 +48,7 @@ const Navbar = () => {
                 </NavLink>
                 <ul className='dogs-dropdown-content'>
                   <li><NavLink to={'/dogtraining'}>Assistans&shy;hundar</NavLink></li>
-                  <li><NavLink to={'/video'}>Assistanshund&shy;beteenden</NavLink></li>
+                  <li><NavLink to={'/videos'}>Assistanshund&shy;beteenden</NavLink></li>
                   <li><NavLink to={'/training'}>Träning av assistanshundar</NavLink></li>
                 </ul>
               </li>
