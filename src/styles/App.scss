@@ -112,16 +112,33 @@ p {
   text-align: center;
 }
 
+.collapse {
+  display: none;
+}
+
+.toggle-navbar {
+  display: none;
+}
+
 .navbar-toggler {
   font-size: 2rem;
   color: #efe6e6;
   background: transparent;
   border: 1px solid transparent;
-}
+  position: relative;
 
-
-.collapse:not(.show) {
-  display: none;
+  
+  &:hover {
+    .toggle-navbar {
+      display: block;
+      position: absolute;
+      right: 0;
+      border-radius: 8px 0 8px 8px;
+      width: 250px;
+      background: #8e0262;
+    }
+  }
+  
 }
 
 .navbar-collapse {
@@ -139,13 +156,14 @@ p {
   li {
     display: block;
     cursor: pointer;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
   }
 
   li:hover,
   .active {
     color: #ffffff;
-    padding: 0.5rem 0;
-    border-bottom: 2px solid #fff;
+    font-weight: 600;
   }
 
   a {

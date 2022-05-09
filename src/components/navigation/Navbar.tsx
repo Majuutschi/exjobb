@@ -36,6 +36,14 @@ const Navbar = () => {
         <NavLink className='logo-link' to="/">Irene Wickman Assistanshundar</NavLink>
         <button className='navbar-toggler'>
           <i className='fas fa-bars'></i>
+          <ul className='nav-links toggle-navbar'>
+            <li><NavLink to={'/dogtraining'}>Assistans&shy;hundar</NavLink></li>
+            <li><NavLink to={'/videos'}>Assistanshund&shy;beteenden</NavLink></li>
+            <li><NavLink to={'/training'}>Träning av assistanshundar</NavLink></li>
+            <li><NavLink to="/daycare">Hunddagis och hundpensionat</NavLink></li>
+            <li><NavLink to="/about">Om mig</NavLink></li>
+            <li><NavLink to="/connect">Kontakt</NavLink></li>
+          </ul>
         </button>
 
         <div className='collapse navbar-collapse'>
