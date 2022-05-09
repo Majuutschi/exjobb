@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { NavHashLink } from 'react-router-hash-link';
+// import { NavHashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -40,13 +40,25 @@ const Navbar = () => {
 
         <div className='collapse navbar-collapse'>
           <ul className='nav-links navbar-nav'>
-            <li><NavHashLink to={'/dogtraining#dogs'}>Assistans&shy;hundar</NavHashLink></li>
-            <li><NavHashLink to={'/dogtraining#video'}>Assistanshund&shy;beteenden</NavHashLink></li>
-            <li><NavHashLink to={'/dogtraining#training'}>Träning av assistanshundar</NavHashLink></li>
+            <div>
+              <li className='dogs-dropdown'><NavLink to={'/dogtraining'}>
+                Assistans&shy;hundar
+                <i className='fa fa-caret-down'></i>
+              </NavLink></li>
+              <div className='dogs-dropdown-content'>
+                <ul>
+                  <li><NavLink to={'/dogtraining'}>Assistans&shy;hundar</NavLink></li>
+                  <li><NavLink to={'/video'}>Assistanshund&shy;beteenden</NavLink></li>
+                  <li><NavLink to={'/training'}>Träning av assistanshundar</NavLink></li>
+                </ul>
+              </div>
+            </div>
+            
             <li><NavLink to="/daycare">Hunddagis och hundpensionat</NavLink></li>
             <li><NavLink to="/about">Om mig</NavLink></li>
             <li><NavLink to="/connect">Kontakt</NavLink></li>
           </ul>
+          
         </div>
       </div>
       
