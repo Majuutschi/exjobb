@@ -9,17 +9,17 @@ const Training = () => {
           <div className='three-pics'>
             <div className='training-dog'>
               <div className='training-img'>
-                <img src={require('../../images/hero.jpg')} alt="" />
+                <img src={require('../images/hero.jpg')} alt="" />
               </div>
             </div>
             <div className='training-dog'>
               <div className='training-img'>
-                <img src={require('../../images/clarkkent.jpg')} alt="" />
+                <img src={require('../images/clarkkent.jpg')} alt="" />
               </div>
             </div>
             <div className='training-dog'>
               <div className='training-img'>
-                <img src={require('../../images/dog3.jpg')} alt="" />
+                <img src={require('../images/dog3.jpg')} alt="" />
               </div>
             </div>
           </div>

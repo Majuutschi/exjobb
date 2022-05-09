@@ -41,19 +41,18 @@ const Navbar = () => {
         <div className='collapse navbar-collapse'>
           <ul className='nav-links navbar-nav'>
             <div>
-              <li className='dogs-dropdown'><NavLink to={'/dogtraining'}>
-                Assistans&shy;hundar
-                <i className='fa fa-caret-down'></i>
-              </NavLink></li>
-              <div className='dogs-dropdown-content'>
-                <ul>
+              <li className='dogs-dropdown'>
+                <NavLink to={'/dogtraining'}>
+                  Assistans&shy;hundar
+                  <i className='fa fa-caret-down'></i>
+                </NavLink>
+                <ul className='dogs-dropdown-content'>
                   <li><NavLink to={'/dogtraining'}>Assistans&shy;hundar</NavLink></li>
                   <li><NavLink to={'/video'}>Assistanshund&shy;beteenden</NavLink></li>
                   <li><NavLink to={'/training'}>Träning av assistanshundar</NavLink></li>
                 </ul>
-              </div>
+              </li>
             </div>
-            
             <li><NavLink to="/daycare">Hunddagis och hundpensionat</NavLink></li>
             <li><NavLink to="/about">Om mig</NavLink></li>
             <li><NavLink to="/connect">Kontakt</NavLink></li>
@@ -61,7 +60,6 @@ const Navbar = () => {
           
         </div>
       </div>
-      
     </div>
   )
 }
