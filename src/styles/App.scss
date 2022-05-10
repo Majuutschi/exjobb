@@ -368,36 +368,49 @@ p {
 
 
 /* Training */
-.three-pics {
-  padding: 2rem 3rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.training-dog {
-  width: 30%;
-}
-
-.training-img img {
-  border-radius: 8px;
+.one-pic {
+  width: 80%;
   display: block;
   margin: auto;
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
 }
 
-.dog-desc {
-  width: 80%;
+.two-pics {
+  display: none;
+}
+
+.three-pics {
+  display: none;
+}
+
+.training-text {
+  width: 90%;
   margin: auto;
-  margin-top: 0.5rem;
 
-}
+  h4 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
 
-.training-text p {
-  margin-bottom: 0.9rem;
-}
+  p {
+    margin-bottom: 0.5rem;
+  }
 
-.for-sale {
-  padding-bottom: 0.5rem;
-  font-size: small;
+  .training-price {
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+  }
+
+  .for-sale {
+    padding-bottom: 0.5rem;
+    font-style: italic;
+    font-size: small;
+  }
 }
 
 
@@ -783,6 +796,26 @@ p {
     }
   }
   
+    /* Training */
+  .one-pic {
+    display: none;
+  }
+
+  .two-pics {
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-around;
+
+    .training-dog {
+      width: 45%;
+  
+      .training-img img {
+        border-radius: 8px;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
 
 
   /* About */
@@ -911,6 +944,28 @@ p {
   }
 
 
+  /* Training */
+  .two-pics {
+    display: none;
+  }
+
+  .three-pics {
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    .training-dog {
+      width: 30%;
+  
+      .training-img img {
+        border-radius: 8px;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+
+
   /* Daycare */
   .daycare-image {
     display: flex;
@@ -963,6 +1018,25 @@ p {
   }
 
 
+  /* Training */
+  .three-pics {
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    .training-dog {
+      width: 30%;
+  
+      .training-img img {
+        border-radius: 8px;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+
+
+
   /* About */
   .about-text {
     padding: 0.5rem 2rem;
@@ -970,7 +1044,6 @@ p {
   
 
   /* Daycare */
-  
   .prices {
     display: flex;
     justify-content: space-around;
