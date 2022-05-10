@@ -5,7 +5,10 @@ const Daycare = () => {
     <div className='container'>
       <div className='content'>
         <div className='daycare-image'>
-          <img src={require('../images/hunddagis.jpg')} alt="" />
+          <img className='daycare-big-img' src={require('../images/hunddagis.jpg')} alt="" />
+          <img className='daycare-small-img' src={require('../images/hunddagis21.jpg')} alt="" />
+          <img className='daycare-both-img' src={require('../images/hunddagis11.jpg')} alt="" />
+          <img className='daycare-both-img' src={require('../images/hunddagis22.jpg')} alt="" />
         </div>
         <div className='daycare-content'>
           <h1>Gårdesta hunddagis och hundpensionat</h1>
@@ -14,10 +17,10 @@ const Daycare = () => {
             Perfekt för pendlare mellan Köping och Västerås. Platser finns både på hunddagis och pensionat.
           </p>
           <p>
-            Fina rymliga boxar! Två st fina rastgårdar varav en i skogsmiljö.
+            Fina rymliga boxar! Två st fina rastgårdar varav en i skogsmiljö. Fina promenadvägar i skog och byvägar.
           </p>
           <p>
-            Fina promenadvägar i skog och byvägar. Kloklippning 100 kr, omvårdnad (kollar öron, borstning, tänder) 100 kr, badning 250 kr
+            Kloklippning 100 kr, omvårdnad (kollar öron, borstning, tänder) 100 kr, badning 250 kr.
           </p>
           <p>
             Jag är utbildad hundinstruktör, assistanshundsinstruktör och har gått hunddagisutbildning samt naturligtvis godkänd av Länsstyrelsen.
@@ -100,12 +103,16 @@ const Daycare = () => {
               <li className='price-list-item'>2 hundar 13000 kr</li>
               <li className='price-list-item'>3 hundar 17 000kr </li>
             </ul>
+            <ul className='price-list'>
+              <li className='price-list-item'>Semesterveckor v. 27-33</li>
+              <li className='price-list-item'>200 kr extra per dygn per hund!</li>
+            </ul>
           </div>
         </div>
-        <p>Semesterveckor v. 27-33.</p> 
-        <p>200 kr extra per dygn per hund!</p>
-
-        <a href="https://www.facebook.com/Gårdesta-Hunddagis-och-Hundpensionat-334511567430024/">Följ oss gärna på FaceBook!</a>
+        
+        <div className='daycare-social'>
+          <a href="https://www.facebook.com/Gårdesta-Hunddagis-och-Hundpensionat-334511567430024/">Följ oss gärna på FaceBook!</a>
+        </div>
       </div>
     </div>
   )

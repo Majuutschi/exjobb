@@ -22,7 +22,7 @@ html, body {
 .container {
   max-width: 500px;
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 6rem;
   padding-bottom: 1rem;
 }
 
@@ -136,6 +136,7 @@ p {
       border-radius: 8px 0 8px 8px;
       width: 250px;
       background: #8e0262;
+      transition: ease-in-out 0.5s;
     }
   }
   
@@ -403,8 +404,17 @@ p {
 
 /* Daycare */
 .daycare-image {
+  margin-top: 1rem;
   width: 60%;
   margin: auto;
+
+  .daycare-both-img {
+    display: none;
+  }
+
+  .daycare-big-img {
+    display: none;
+  }
 
   img {
     width: 100%;
@@ -416,6 +426,10 @@ p {
   width: 80%;
   margin: auto;
   margin-bottom: 2rem;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .price-title {
@@ -424,12 +438,43 @@ p {
 }
 
 .prices {
-  display: flex;
-  justify-content: space-around;
+  display: block;
+  text-align: center;
+
+  h3 {
+    margin-top: 1rem;
+  }
+
+  h4 {
+    margin: 0.5rem 0;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  .price-list {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
 }
 
-.price-list {
-  list-style: none;
+.daycare-social {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: #740074;
+    font-weight: 600;
+    font-size: 1rem;
+
+    &:hover {
+      color: #9f026e;
+    }
+  }
 }
 
 
@@ -588,15 +633,24 @@ p {
     margin-bottom: 1rem;
   }
 
+  /* Daycare */
+  .prices {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      width: 33%;
+    }
+  }
 
 
   /* Connect */
   .connect-map {
     height: 250px;
   }
-
-
-
 }
 
 
@@ -717,6 +771,18 @@ p {
   .video-section {
     margin-top: 2rem;
   }
+
+
+  /* Daycare */
+  .daycare-image {
+    .daycare-big-img {
+      display: flex;
+    }
+    .daycare-small-img {
+      display: none;
+    }
+  }
+  
 
 
   /* About */
@@ -845,6 +911,24 @@ p {
   }
 
 
+  /* Daycare */
+  .daycare-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+
+    .daycare-big-img {
+      display: none;
+    }
+
+    .daycare-both-img {
+      display: block;
+      width: 45%;
+      margin: 0.5rem;
+    }
+  }
+
 
   /* About */
   .about-content {
@@ -884,6 +968,14 @@ p {
     padding: 0.5rem 2rem;
   }
   
+
+  /* Daycare */
+  
+  .prices {
+    display: flex;
+    justify-content: space-around;
+  }
+
 
 
   /* Connect */
