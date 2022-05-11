@@ -10,7 +10,7 @@ html, body {
   font-family: 'Lato', sans-serif;
   color: #740074;
   background: #f9e4f2;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 #page-container {
@@ -33,7 +33,7 @@ h1 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h3 {
@@ -107,7 +107,7 @@ p {
   display: inline-block;
   text-decoration: none;
   color: #efe6ee;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   padding: 0.5rem;
   text-align: center;
 }
@@ -185,7 +185,7 @@ p {
   margin-top: auto;
   width: 100%;
   text-align: center;
-  background: #780253;
+  background: #9f026e;
   color: #efe6e6;
   padding: 1rem;
 
@@ -245,9 +245,10 @@ p {
 
 .choice a {
   text-decoration: none;
+  color: #740074;
 
   &:focus {
-    color: rgb(242, 69, 202);
+    color: #f245ca;
   }
 }
 
@@ -272,27 +273,23 @@ p {
 
 
 
-/* Dogtraining */
-.pink {
-  background: rgb(249,228,242);
-  background: linear-gradient(180deg, rgba(249,228,242,1) 0%, rgba(170,29,126,1) 40%, rgba(159,2,110,1) 50%, rgba(170,29,126,1) 60%, rgba(249,228,242,1) 100%);
-}
-
-
-
 /* Dogs */
-#dogs h1 {
-  padding-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .dogs-img {
-  padding: 1rem;
+  border-radius: 8px;
   box-shadow: 1px 1px 5px #2a002a63;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
 
   img {
+    height: 100%;
+    width: 100%;
     border-radius: 8px;
   }
+}
+
+.img-a,
+.img-b {
+  display: none;
 }
 
 .dogs-text {
@@ -307,28 +304,32 @@ p {
 .dogs-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.5rem 1rem;
+  gap: 1rem;
   list-style: none;
   padding-left: 0.5rem;
   margin-bottom: 1rem;
-}
 
-.dogs-list-item {
-  border: 1px solid transparent;
-  background: #ffe2ff;
-  border-radius: 8px;
-  box-shadow: 1px 1px 5px #2a002a63;
-  padding: 1rem;
-  margin-bottom: 0.5rem;
-
-  h3 {
-    text-align: center;
+  .dogs-list-item {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px #2a002a63;
+    padding: 1rem;
     margin-bottom: 0.5rem;
-  }
+  
+    h3 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
 
-  p {
-    margin-bottom: 0;
-    margin-left: 0;
+    h4 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.3rem;
+    }
+  
+    p {
+      margin-bottom: 0;
+      margin-left: 0;
+    }
   }
 }
 
@@ -596,20 +597,28 @@ p {
 
 
 @media only screen and (min-width: 600px) {
-  html {
-    font-size: 13px;
+  h1 {
+    font-size: 2rem;
   }
 
-
   /* Dogs */
+  .img-b {
+    display: block;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
   .dogs-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem 1rem;
-    list-style: none;
-    padding-left: 0.5rem;
-    margin-bottom: 1rem;
   }
+
+  .long-text-b {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
 }
 
 
@@ -623,6 +632,10 @@ p {
     max-width: 720px;
   }
 
+  /* Navbar */
+  .logo-link {
+    font-size: 1.5rem;
+  }
 
   /* Footer */
   .footer p {
@@ -637,6 +650,14 @@ p {
 
 
   /* Dogs */
+  .img-a-small {
+    display: none;
+  }
+
+  .img-a {
+    display: block;
+  }
+
   .dogs-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -644,6 +665,17 @@ p {
     list-style: none;
     padding-left: 0.5rem;
     margin-bottom: 1rem;
+
+    h4 {
+      margin-top: 1rem;
+      text-align: center;
+    }
+  }
+
+  .long-text-c {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
   }
 
 
@@ -694,7 +726,7 @@ p {
   }
 
   .logo-link {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .navbar-toggler {
@@ -721,7 +753,7 @@ p {
     a {
       text-decoration: none;
       color: #efe6e6;
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
   }
 
@@ -736,21 +768,27 @@ p {
 
   .dogs-dropdown-content {
     display: none;
-    background: #8e0262;
+    background: #9f026df6;
     border-radius: 8px;
     position: absolute;
-    top: 1.5rem;
+    top: 2rem;
+    transition: ease-in-out 0.5s;
+    box-shadow: 1px 1px 5px #2a002a63;
 
     li {
-      border-top: 2px solid transparent;
+      display: block;
+      cursor: pointer;
+      padding: 0.5rem 0;
       border-bottom: 2px solid transparent;
+      font-weight: 500;
     }
 
     li:hover,
     .active {
-      border-bottom: 2px solid transparent;
-      padding: 0;
+      color: #ffffff;
+      font-weight: 600;
     }
+
   }
 
   .dogs-dropdown:hover {
@@ -887,16 +925,12 @@ p {
   }
 
   .dogs-img {
-    display: block;
     justify-content: center;
     padding: 0;
     height: 400px;
+    width: 100%;
     overflow: hidden;
     border-radius: 8px;
-
-    img {
-      width: 100%;
-    }
   }
 
   .img-a {
@@ -914,11 +948,6 @@ p {
     grid-row-start: 2;
     grid-row-end: 4;
     grid-column: 2;
-
-    h4 {
-      text-align: center;
-      margin-top: 1rem;
-    }
   }
 
   .long-text-c {

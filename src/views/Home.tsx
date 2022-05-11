@@ -8,7 +8,7 @@ const Home = () => {
         <h1> Välkommen till Irene Wickman Assistanshundar</h1>
         <div className='home-choice'>
           <div className='choice'>
-            <NavLink to='/dogtraining'>
+            <NavLink to='/dogs'>
               <div className='choice-image'>
                 <img src={require('../images/herofb2.jpg')} alt="" />
               </div>

@@ -12,7 +12,10 @@ const Dogs = () => {
 
             <ul className='dogs-list'>
               <div className='dogs-img img-a'>
-                <img src={require('../../images/dog1.jpg')} alt="" />
+                <img src={require('../images/dog12.jpg')} alt="" />
+              </div>
+              <div className='dogs-img img-a-small'>
+                <img src={require('../images/dog3.jpg')} alt="" />
               </div>
               <li className='dogs-list-item'>
                 <h3>Servicehundar</h3>
@@ -30,7 +33,7 @@ const Dogs = () => {
                 <p>Larmar vid anfall. Ibland även innan ett anfall.</p>
               </li>
               <div className='dogs-img img-b'>
-                <img src={require('../../images/dog2.jpg')} alt="" />
+                <img src={require('../images/dog2.jpg')} alt="" />
               </div>
               <li className='dogs-list-item'>
                 <h3>Ledarhundar</h3>

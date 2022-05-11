@@ -37,7 +37,7 @@ const Navbar = () => {
         <button className='navbar-toggler'>
           <i className='fas fa-bars'></i>
           <ul className='nav-links toggle-navbar'>
-            <li><NavLink to={'/dogtraining'}>Assistans&shy;hundar</NavLink></li>
+            <li><NavLink to={'/dogs'}>Assistans&shy;hundar</NavLink></li>
             <li><NavLink to={'/videos'}>Assistanshund&shy;beteenden</NavLink></li>
             <li><NavLink to={'/training'}>Träning av assistanshundar</NavLink></li>
             <li><NavLink to="/daycare">Hunddagis och hundpensionat</NavLink></li>
@@ -50,12 +50,12 @@ const Navbar = () => {
           <ul className='nav-links navbar-nav'>
             <div>
               <li className='dogs-dropdown'>
-                <NavLink to={'/dogtraining'}>
+                <NavLink to={'/dogs'}>
                   Assistans&shy;hundar
                   <i className='fa fa-caret-down'></i>
                 </NavLink>
                 <ul className='dogs-dropdown-content'>
-                  <li><NavLink to={'/dogtraining'}>Assistans&shy;hundar</NavLink></li>
+                  <li><NavLink to={'/dogs'}>Assistans&shy;hundar</NavLink></li>
                   <li><NavLink to={'/videos'}>Assistanshund&shy;beteenden</NavLink></li>
                   <li><NavLink to={'/training'}>Träning av assistanshundar</NavLink></li>
                 </ul>
