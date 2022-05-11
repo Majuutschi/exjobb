@@ -122,21 +122,57 @@ p {
 
 .navbar-toggler {
   font-size: 2rem;
+  height: 2rem;
+  width: 2rem;
   color: #efe6e6;
   background: transparent;
   border: 1px solid transparent;
   position: relative;
+  transition: ease-in-out 0.8s;
 
+  i {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .icon-left {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: ease-in-out 0.5s;
+  }
+
+  .icon-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateY(180deg);
+    transition: ease-in-out 0.5s;
+    color: transparent;
+  }
   
   &:hover {
+    .icon-left {
+      transform: rotateY(180deg);
+      transition: ease-in-out 0.5s;
+      color: transparent;
+    }
+
+    .icon-right {
+      transform: rotateY(0deg);
+      transition: ease-in-out 0.5s;
+      color: #efe6e6;
+    }
+
     .toggle-navbar {
       display: block;
       position: absolute;
-      right: 0;
+      right: 0.5rem;
+      top: 2rem;
       border-radius: 8px 0 8px 8px;
       width: 250px;
       background: #8e0262;
-      transition: ease-in-out 0.5s;
+      transition: ease-in-out 1s;
     }
   }
   

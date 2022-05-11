@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [open, setOpen] = useState(false);
 
   const controlNavbar = () => {
     if (typeof window !== 'undefined') {
@@ -18,6 +19,16 @@ const Navbar = () => {
       setLastScrollY(window.scrollY);       //remember current page location to use in next move
     }
   };
+
+  const openToggle = () => {
+    if(open === false) {
+      setOpen(true)
+    } else {
+      setOpen(false)
+    }
+    console.log(open)
+  }
+
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -34,8 +45,9 @@ const Navbar = () => {
     <div className={`navbar ${show && 'hidden'}`}>
       <div className='navbar-container'>
         <NavLink className='logo-link' to="/">Irene Wickman Assistanshundar</NavLink>
-        <button className='navbar-toggler'>
-          <i className='fas fa-bars'></i>
+        <button className='navbar-toggler' onClick={openToggle}>
+          <i className='fa-solid fa-bars icon-left'></i>
+          <i className='fa-solid fa-xmark icon-right'></i>
           <ul className='nav-links toggle-navbar'>
             <li><NavLink to={'/dogs'}>Assistans&shy;hundar</NavLink></li>
             <li><NavLink to={'/videos'}>Assistanshund&shy;beteenden</NavLink></li>
