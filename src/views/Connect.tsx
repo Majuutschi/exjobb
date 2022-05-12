@@ -38,8 +38,6 @@ const Connect = () => {
             </div>
           </div>
         </div>
-        
-        
       </div>
     </div>
   )
