@@ -1,42 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react';
+import ConnectForm from '../components/connect/ConnectForm';
 
 const Connect = () => {
+  
+
   return (
     <div className='container'>
       <div className='content'>
         <h1>Kontakta mig</h1>
         <div className='connect-content'>
-          <div className='form-container'>
-            <form action="">
-              <div className='form-item'>
-                <label htmlFor="name">
-                  Namn:
-                </label>
-                <input id='name' type="text" />
-              </div>
-              <div className='form-item'>
-                <label htmlFor="mail">
-                  E-post:
-                </label>
-                <input id='mail' type="text" />
-              </div>
-              <div className='form-item'>
-                <label htmlFor="message">
-                  Meddelande:
-                </label>
-                <textarea 
-                  name="message" 
-                  id="message" 
-                  cols={30} 
-                  rows={10}
-                ></textarea>
-              </div>
-              <div className='btn-center'>
-                <button className='btn'>Skicka</button>
-              </div>
-              
-            </form> 
-          </div>
+          <ConnectForm />
           <div className='connect-details'>
             <div className='connect-map-container'>
               <iframe 
