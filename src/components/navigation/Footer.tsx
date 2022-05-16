@@ -5,11 +5,17 @@ const Footer = () => {
     <div className='footer'>
       <div className='footer-container'>
         <p>
-          &copy; Irene Wickman Assistanshundar
+           
         </p>
         
         <div className='social'>
-          <a href="https://www.facebook.com/Irene-Wickman-Assistanshundar-131872730169705/"><i className='fa-brands fa-facebook-f'></i></a>
+          <div className='social-item'>
+            <a href="https://www.facebook.com/Irene-Wickman-Assistanshundar-131872730169705/"><i className='fa-brands fa-facebook-f'></i>Irene Wickman Assistanshundar</a>
+          </div>
+          <p>|</p> 
+          <div className='social-item'>
+            <a href="https://www.facebook.com/Gårdesta-Hunddagis-och-Hundpensionat-334511567430024/"><i className='fa-brands fa-facebook-f'></i>Gårdesta hunddagis och hundpensionat</a>
+          </div>
         </div>
       </div>
       

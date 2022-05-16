@@ -81,7 +81,7 @@ const ConnectForm = () => {
               type="text"  
               onChange={handleChange}
             />
-            <small>{errorMessage}</small>
+            <small className='connect-error'>{errorMessage}</small>
           </div>
           <div className='form-item'>
             <label htmlFor="email">
@@ -94,7 +94,7 @@ const ConnectForm = () => {
               onChange={handleChange}
               value={email}
             />
-            <small>{errorMessage}</small>
+            <small className='connect-error'>{errorMessage}</small>
           </div>
           <div className='form-item'>
             <label htmlFor="message">
@@ -109,7 +109,7 @@ const ConnectForm = () => {
               onChange={handleChange}
             ></textarea>
             { error &&
-              <small>{errorMessage}</small>
+              <small className='connect-error'>{errorMessage}</small>
             }
             
           </div>

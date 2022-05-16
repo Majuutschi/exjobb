@@ -362,19 +362,40 @@ p {
 .footer-container {
   width: 90%;
   margin: auto;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
 
-.social i {
-  margin-left: 1rem;
-  color: #efe6e6;
-  -webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &:hover {
-    color: #edb8e8;
+  .social-item {
+    margin: 1rem;
+  }
+
+  a {
+    
+    text-decoration: none;
+    color: #efe6e6;
+    font-weight: 600;
+
+    &:hover {
+      color: #edb8e8;
+    }
+  }
+
+  i {
+    margin-right: 0.5rem;
+    color: #efe6e6;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  
+    &:hover {
+      color: #edb8e8;
+    }
   }
 }
 
@@ -699,6 +720,7 @@ p {
 
 .form-item {
   margin-bottom: 1.2rem;
+  text-align: center;
 
   input,
   label {
@@ -724,6 +746,10 @@ p {
     &:focus {
       outline: none;
     }
+  }
+
+  .connect-error {
+    color: #af002f;
   }
 }
 
