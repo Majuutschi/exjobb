@@ -4,10 +4,6 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className='footer-container'>
-        <p>
-           
-        </p>
-        
         <div className='social'>
           <div className='social-item'>
             <a href="https://www.facebook.com/Irene-Wickman-Assistanshundar-131872730169705/"><i className='fa-brands fa-facebook-f'></i>Irene Wickman Assistanshundar</a>
