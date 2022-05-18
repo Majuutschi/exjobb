@@ -1,0 +1,266 @@
+/* Navbar */
+.navbar {
+  background: #9f026e;
+  color: #efe6e6;
+  border-bottom: 1px solid #8e0262;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: 0.3s linear;
+  z-index: 1;
+}
+
+.hidden {
+  height: 5rem;
+  width: 100%;
+  z-index: 40;
+  position: fixed;
+  top: -80px;
+  transition: 0.3s linear;
+}
+
+.navbar-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #efe6ee;
+  font-size: 1.35rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.collapse {
+  display: none;
+}
+
+.toggle-navbar {
+  display: none;
+}
+
+.navbar-toggler {
+  font-size: 2rem;
+  height: 2rem;
+  width: 2rem;
+  color: #efe6e6;
+  background: transparent;
+  border: 1px solid transparent;
+  position: relative;
+  transition: ease-in-out 0.8s;
+
+  i {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .icon-left {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: ease-in-out 0.5s;
+  }
+
+  .icon-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateY(180deg);
+    transition: ease-in-out 0.5s;
+    color: transparent;
+  }
+  
+  &:hover {
+    .icon-left {
+      transform: rotateY(180deg);
+      transition: ease-in-out 0.5s;
+      color: transparent;
+    }
+
+    .icon-right {
+      transform: rotateY(0deg);
+      transition: ease-in-out 0.5s;
+      color: #efe6e6;
+    }
+
+    .toggle-navbar {
+      display: block;
+      position: absolute;
+      right: 0.5rem;
+      top: 2rem;
+      border-radius: 8px 0 8px 8px;
+      width: 250px;
+      background: #8e0262;
+      transition: ease-in-out 1s;
+    }
+  }
+  
+}
+
+.navbar-collapse {
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links {
+  list-style: none;
+
+  li {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+  }
+
+  li:hover,
+  .active {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  a {
+    text-decoration: none;
+    color: #efe6e6;
+    font-size: 0.95rem;
+  }
+}
+
+.dogs-dropdown i {
+  display: none;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .logo-link {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .navbar {
+    padding: 0.5rem;
+    height: fit-content;
+  }
+
+  .navbar-container {
+    width: 100%;
+    padding: 0 0.2rem;
+    display: block;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .logo-link {
+    font-size: 1.5rem;
+    margin: auto;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .collapse:not(.show) {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    li {
+      word-wrap: break-word;
+      margin: 0.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #efe6e6;
+      font-size: 1rem;
+    }
+  }
+
+  .dogs-dropdown {
+    position: relative;
+
+    i {
+      display: inline-block;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .dogs-dropdown-content {
+    display: none;
+    background: #9f026df6;
+    border-radius: 8px;
+    position: absolute;
+    top: 2rem;
+    transition: ease-in-out 0.5s;
+    box-shadow: 1px 1px 5px #2a002a63;
+
+    li {
+      display: block;
+      cursor: pointer;
+      padding: 0.5rem 0;
+      border-bottom: 2px solid transparent;
+      font-weight: 500;
+    }
+
+    li:hover,
+    .active {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+  }
+
+  .dogs-dropdown:hover {
+    .dogs-dropdown-content {
+      display: block;
+      z-index: 2;
+    }
+  }
+    
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  .navbar-container {
+    width: 90%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+  .navbar-container {
+    max-width: 1300px;
+  }
+
+  .logo-link {
+    font-size: 1.5rem;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+}
