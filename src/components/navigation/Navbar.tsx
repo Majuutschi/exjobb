@@ -52,32 +52,20 @@ const Navbar = () => {
             <li><NavLink to={'/dogs'}>Assistans&shy;hundar</NavLink></li>
             <li><NavLink to={'/videos'}>Assistanshund&shy;beteenden</NavLink></li>
             <li><NavLink to={'/training'}>Träning av assistanshundar</NavLink></li>
-            <li><NavLink to="/daycare">Hunddagis och hundpensionat</NavLink></li>
-            <li><NavLink to="/about">Om mig</NavLink></li>
-            <li><NavLink to="/connect">Kontakt</NavLink></li>
+            <li><NavLink to={'/daycare'}>Hunddagis och hundpensionat</NavLink></li>
+            <li><NavLink to={'/about'}>Om mig</NavLink></li>
+            <li><NavLink to={'/connect'}>Kontakt</NavLink></li>
           </ul>
         </button>
 
         <div className='collapse navbar-collapse'>
           <ul className='nav-links navbar-nav'>
-            <div>
-              <li className='dogs-dropdown'>
-                <NavLink to={'/dogs'}>
-                  Assistans&shy;hundar
-                  <i className='fa fa-caret-down'></i>
-                </NavLink>
-                <ul className='dogs-dropdown-content'>
-                  <li><NavLink to={'/dogs'}>Assistans&shy;hundar</NavLink></li>
-                  <li><NavLink to={'/videos'}>Assistanshund&shy;beteenden</NavLink></li>
-                  <li><NavLink to={'/training'}>Träning av assistanshundar</NavLink></li>
-                </ul>
-              </li>
-            </div>
-            <li><NavLink to="/daycare">Hunddagis och hundpensionat</NavLink></li>
-            <li><NavLink to="/about">Om mig</NavLink></li>
-            <li><NavLink to="/connect">Kontakt</NavLink></li>
+            <li><NavLink to={'/dogs'}>Assistans&shy;hundar</NavLink></li>
+            <li><NavLink to={'/videos'}>Assistanshund&shy;beteenden</NavLink></li>
+            <li><NavLink to={'/training'}>Träning av assistanshundar</NavLink></li>
+            <li><NavLink to={'/daycare'}>Hunddagis och hundpensionat</NavLink></li>
+            <li className='last'><NavLink to={'/connect'}>Kontakt</NavLink></li>
           </ul>
-          
         </div>
       </div>
     </div>
