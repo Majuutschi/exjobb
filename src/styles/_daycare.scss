@@ -1,0 +1,129 @@
+.daycare-image {
+  margin-top: 1rem;
+  width: 60%;
+  margin: auto;
+
+  .daycare-both-img {
+    display: none;
+  }
+
+  .daycare-big-img {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
+.daycare-content {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.price-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.prices {
+  display: block;
+  text-align: center;
+
+  h3 {
+    margin-top: 1rem;
+  }
+
+  h4 {
+    margin: 0.5rem 0;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  .price-list {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.daycare-social {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: #740074;
+    font-weight: 600;
+    font-size: 1rem;
+
+    &:hover {
+      color: #9f026e;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .prices {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      width: 33%;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .daycare-image {
+    .daycare-big-img {
+      display: flex;
+    }
+
+    .daycare-small-img {
+      display: none;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .daycare-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+
+    .daycare-big-img {
+      display: none;
+    }
+
+    .daycare-both-img {
+      display: block;
+      width: 45%;
+      margin: 0.5rem;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1400px) {
+  .prices {
+    display: flex;
+    justify-content: space-around;
+  }
+}

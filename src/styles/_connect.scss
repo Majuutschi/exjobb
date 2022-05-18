@@ -1,0 +1,140 @@
+.connect-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 450px;
+  width: 300px;
+}
+
+.form-item {
+  margin-bottom: 1.2rem;
+  text-align: center;
+
+  input,
+  label {
+    display: block;
+  }
+
+  label {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  input,
+  textarea {
+    width: 20rem;
+    font-size: 1rem;
+    color: #740074;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: #f9f9fb;
+    box-shadow: 1px 1px 5px #2a002a63;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .connect-error {
+    color: #af002f;
+  }
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+}
+
+.connect-map-container {
+  display: block;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.connect-map {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px #2a002a63;
+  margin-bottom: 1rem;
+}
+
+.connect-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1rem;
+
+  a {
+    text-decoration: none;
+    color: #740074;
+  }
+}
+
+.address {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .connect-map {
+    height: 250px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .connect-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form-container {
+    height: 490px;
+    width: 360px;
+  }
+
+  .connect-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .connect-map {
+    width: 400px;
+  }
+}
+
+
+@media only screen and (min-width: 1400px) {
+  .connect-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .connect-items {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+
+  .connect-item {
+    margin-bottom: 1rem;
+  }
+
+  .connect-map {
+    height: 400px;
+  }
+}

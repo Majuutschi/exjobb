@@ -1,0 +1,62 @@
+.about-img {
+  width: 65%;
+  display: block;
+  margin: auto;
+
+  img {
+    border-radius: 8px;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+.about-text {
+  padding: 0.5rem 2rem;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .about-img {
+    width: 100%;
+
+    img {
+      margin: 0;
+      display: block;
+      margin-left: auto;
+    }
+  }
+  
+  .about-text {
+    padding: 0.5rem 1rem;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .about-text {
+    padding: 1rem;
+  }
+}
+
+
+@media only screen and (min-width: 1400px) {
+  .about-text {
+    padding: 0.5rem 2rem;
+  }
+}

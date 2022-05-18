@@ -1,0 +1,90 @@
+.one-pic {
+  width: 80%;
+  display: block;
+  margin: auto;
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
+.two-pics {
+  display: none;
+}
+
+.three-pics {
+  display: none;
+}
+
+.training-text {
+  width: 90%;
+  margin: auto;
+
+  h4 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  .training-price {
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+  }
+
+  .for-sale {
+    padding-bottom: 0.5rem;
+    font-style: italic;
+    font-size: small;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .one-pic {
+    display: none;
+  }
+
+  .two-pics {
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-around;
+
+    .training-dog {
+      width: 45%;
+  
+      .training-img img {
+        border-radius: 8px;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .two-pics {
+    display: none;
+  }
+
+  .three-pics {
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    .training-dog {
+      width: 30%;
+  
+      .training-img img {
+        border-radius: 8px;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}
