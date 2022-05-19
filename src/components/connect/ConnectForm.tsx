@@ -8,7 +8,9 @@ const ConnectForm = () => {
   const [message, setMessage] = useState<string>('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-  const [errorMessage, setErrorMessage] = useState<string>('');
+  const [nameErrorMessage, setNameErrorMessage] = useState<string>('');
+  const [mailErrorMessage, setMailErrorMessage] = useState<string>('');
+  const [messageErrorMessage, setMessageErrorMessage] = useState<string>('');
 
   const regex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+[.]{1}[a-zA-Z]{2,}$/;
 
@@ -32,31 +34,41 @@ const ConnectForm = () => {
     if(e.target instanceof HTMLFormElement) {
       e.preventDefault();
 
-      if (email !== '' && name !== '' && message !== '') {
-        if (regex.test(email)) {
-          setLoading(true);
+      if (email.length === 0 && name.length === 0 && message.length === 0) {
+        if (email.length === 0) {
+          setError(true);
+          setMailErrorMessage('Vänligen fyll i en giltig e-postadress');
+        } else if (email.length !== 0) {
+          if (regex.test(email)) {
+            setError(false)
+            setNameErrorMessage('');
+          } else {
+            setError(true);
+            setMailErrorMessage('Vänligen fyll i en giltig e-postadress');
+          }
+        }
+        if (name.length === 0) {
+          setError(true)
+          setNameErrorMessage('Vänligen fyll ditt namn');
+        } else if (message.length !== 0) {
           setError(false)
-          setTimeout(() => {
-            setLoading(false);
-            setSubmitted(true);
-          }, 800);
-          e.target.reset();
-        } else {
-          setError(true);
-          setErrorMessage('Vänligen fyll i en giltig e-postadress');
+          setNameErrorMessage('');
         }
-        
-      } else {
-        if (email === '') {
-          setError(true);
-          setErrorMessage('Vänligen fyll i en giltig e-postadress');
-        } else if (name === '') {
+        if (message.length === 0) {
           setError(true)
-          setErrorMessage('Vänligen fyll ditt namn');
-        } else if (message === '') {
-          setError(true)
-          setErrorMessage('Vänligen skriv ditt meddelande');
+          setMessageErrorMessage('Vänligen skriv ditt meddelande');
+        } else if (message.length !== 0) {
+          setError(false)
+          setMessageErrorMessage('');
         }
+      } else if (email.length !== 0 && name.length !== 0 && message.length !== 0) {
+        setLoading(true);
+        setError(false)
+        setTimeout(() => {
+          setLoading(false);
+          setSubmitted(true);
+        }, 800);
+        e.target.reset();
       }
       
     }
@@ -81,7 +93,7 @@ const ConnectForm = () => {
               type="text"  
               onChange={handleChange}
             />
-            <small className='connect-error'>{errorMessage}</small>
+            <small className='connect-error'>{nameErrorMessage}</small>
           </div>
           <div className='form-item'>
             <label htmlFor="email">
@@ -94,7 +106,7 @@ const ConnectForm = () => {
               onChange={handleChange}
               value={email}
             />
-            <small className='connect-error'>{errorMessage}</small>
+            <small className='connect-error'>{mailErrorMessage}</small>
           </div>
           <div className='form-item'>
             <label htmlFor="message">
@@ -109,7 +121,11 @@ const ConnectForm = () => {
               onChange={handleChange}
             ></textarea>
             { error &&
-              <small className='connect-error'>{errorMessage}</small>
+              <small className='connect-error'>{messageErrorMessage}</small>
+            }
+            {
+              !error &&
+              <small className='connect-error'>{messageErrorMessage}</small>
             }
             
           </div>

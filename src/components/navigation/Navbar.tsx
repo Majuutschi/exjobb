@@ -22,12 +22,11 @@ const Navbar = () => {
 
   const openToggle = () => {
     if(open === false) {
-      setOpen(true)
+      setOpen(true);
     } else {
-      setOpen(false)
+      setOpen(false);
     }
-    console.log(open)
-  }
+  };
 
 
   useEffect(() => {
@@ -46,16 +45,30 @@ const Navbar = () => {
       <div className='navbar-container'>
         <NavLink className='logo-link' to="/">Irene Wickman Assistanshundar</NavLink>
         <button className='navbar-toggler' onClick={openToggle}>
-          <i className='fa-solid fa-bars icon-left'></i>
-          <i className='fa-solid fa-xmark icon-right'></i>
-          <ul className='nav-links toggle-navbar'>
-            <li><NavLink to={'/dogs'}>Assistans&shy;hundar</NavLink></li>
-            <li><NavLink to={'/videos'}>Assistanshund&shy;beteenden</NavLink></li>
-            <li><NavLink to={'/training'}>Träning av assistanshundar</NavLink></li>
-            <li><NavLink to={'/daycare'}>Hunddagis och hundpensionat</NavLink></li>
-            <li><NavLink to={'/about'}>Om mig</NavLink></li>
-            <li><NavLink to={'/connect'}>Kontakt</NavLink></li>
-          </ul>
+          
+          {
+            !open &&
+            <div className='closed'>
+              <i className='fa-solid fa-bars icon-left'></i>
+              <ul className='nav-links toggle-navbar'></ul>
+            </div>
+            
+          }
+          {
+            open &&
+            <div className='open'>
+              <i className='fa-solid fa-xmark icon-right'></i>
+              <ul className='nav-links toggle-navbar'>
+                <li><NavLink to={'/dogs'}>Assistans&shy;hundar</NavLink></li>
+                <li><NavLink to={'/videos'}>Assistanshund&shy;beteenden</NavLink></li>
+                <li><NavLink to={'/training'}>Träning av assistanshundar</NavLink></li>
+                <li><NavLink to={'/daycare'}>Hunddagis och hundpensionat</NavLink></li>
+                <li><NavLink to={'/about'}>Om mig</NavLink></li>
+                <li><NavLink to={'/connect'}>Kontakt</NavLink></li>
+              </ul>
+            </div>
+          }
+          
         </button>
 
         <div className='collapse navbar-collapse'>
