@@ -29,39 +29,35 @@ const ConnectForm = () => {
     }
   }
 
-
   const handleSubmit = (e: FormEvent) => {
     if(e.target instanceof HTMLFormElement) {
       e.preventDefault();
 
-      if (email.length === 0 && name.length === 0 && message.length === 0) {
-        if (email.length === 0) {
+      if (email.trim() === '' || name.trim() === '' || message.trim() === '') {
+        if (email.trim() === '' || !regex.test(email)) {
           setError(true);
           setMailErrorMessage('Vänligen fyll i en giltig e-postadress');
-        } else if (email.length !== 0) {
-          if (regex.test(email)) {
-            setError(false)
-            setNameErrorMessage('');
-          } else {
-            setError(true);
-            setMailErrorMessage('Vänligen fyll i en giltig e-postadress');
-          }
+        } else {
+          setError(false);
+          setMailErrorMessage('');
         }
-        if (name.length === 0) {
-          setError(true)
-          setNameErrorMessage('Vänligen fyll ditt namn');
-        } else if (message.length !== 0) {
-          setError(false)
+
+        if (name.trim() === '' || name.trim().length <= 2) {
+          setError(true);
+          setNameErrorMessage('Vänligen fyll i ditt namn');
+        } else {
+          setError(false);
           setNameErrorMessage('');
         }
-        if (message.length === 0) {
-          setError(true)
+
+        if (message.trim() ==='' || message.trim().length <= 3) {
+          setError(true);
           setMessageErrorMessage('Vänligen skriv ditt meddelande');
-        } else if (message.length !== 0) {
-          setError(false)
+        } else {
+          setError(false);
           setMessageErrorMessage('');
         }
-      } else if (email.length !== 0 && name.length !== 0 && message.length !== 0) {
+      } else if (regex.test(email) && name.trim() !== '' && message.trim() !== '') {
         setLoading(true);
         setError(false)
         setTimeout(() => {
@@ -72,7 +68,6 @@ const ConnectForm = () => {
       }
       
     }
-    
   }
 
   return (
@@ -120,14 +115,7 @@ const ConnectForm = () => {
               value={message}
               onChange={handleChange}
             ></textarea>
-            { error &&
-              <small className='connect-error'>{messageErrorMessage}</small>
-            }
-            {
-              !error &&
-              <small className='connect-error'>{messageErrorMessage}</small>
-            }
-            
+            <small className='connect-error'>{messageErrorMessage}</small>
           </div>
           <div className='btn-center'>
             <button type='submit' className='btn'>Skicka</button>
