@@ -64,6 +64,7 @@ const ConnectForm = () => {
           setLoading(false);
           setSubmitted(true);
         }, 800);
+        console.log('Namn: ' + name + ' | E-post: ' + email + ' | Meddelande: ' + message);
         e.target.reset();
       }
       

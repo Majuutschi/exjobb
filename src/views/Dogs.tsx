@@ -17,14 +17,13 @@ const Dogs = () => {
               <div className='dogs-img img-a-small'>
                 <img src={require('../images/dog3.jpg')} alt="" />
               </div>
-              <li className='dogs-list-item'>
+              <li className='dogs-list-item long-text-c'>
                 <h3>Servicehundar</h3>
                 <p>Hjälper funktionsnedsatta med att hämta saker, öppna och stänga dörrar mm.</p> 
-              </li>
-              <li className='dogs-list-item'>
                 <h3>Signalhundar</h3>
                 <p>Hjälper de som är hörselskadade med att höra olika ljud. T.ex. om någon ropar, telefonen ringer eller om någon ringer på dörren, brandlarmet mm.</p>
               </li>
+
               <li className='dogs-list-item long-text-b'>
                 <h3>Alarmerande assistanshundar</h3>
                 <h4>Diabeteshundar</h4>
@@ -35,11 +34,9 @@ const Dogs = () => {
               <div className='dogs-img img-b'>
                 <img src={require('../images/dog2.jpg')} alt="" />
               </div>
-              <li className='dogs-list-item'>
+              <li className='dogs-list-item long-text-a'>
                 <h3>Ledarhundar</h3>
                 <p>Hjälper de synskadade i att leda dem förbi hinder och hitta olika platser.</p>
-              </li>
-              <li className='dogs-list-item long-text-c'>
                 <h3>Servicehund för personer med synnedsättning</h3>
                 <p>Hjälper sin ägare att ta sig fram runt hinder och är även en servicehund samtidigt. För personer som inte är gravt synskadade så de är berättigade till en ledarhund.</p>
               </li>
