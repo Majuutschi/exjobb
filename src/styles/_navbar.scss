@@ -67,34 +67,45 @@
       position: absolute;
       top: 0;
       right: 0;
+      transform: rotateY(0deg);
+      transition: ease-in-out 0.5s;
     }
 
     .toggle-navbar {
       position: absolute;
       right: -3.5rem;
-      top: 2rem;
+      top: 3rem;
       height: 0;
       width: 0;
-      transition: transform 0.5s, height 2s, width 4s;
+      transition: width 0.5s ease-in-out;
     }
-
-    // .icon-right {
-    //   position: absolute;
-    //   top: 0;
-    //   right: 0;
-    //   color: transparent;
-    // }
-  }
-  
-  .open {
-    // .icon-left {
-    //   color: transparent;
-    // }
 
     .icon-right {
       position: absolute;
       top: 0;
       right: 0;
+      transform: rotateY(180deg);
+      transition: ease-in-out 0.5s;
+      color: transparent;
+    }
+  }
+  
+  .open {
+    .icon-left {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: rotateY(180deg);
+      transition: ease-in-out 0.5s;
+      color: transparent;
+    }
+
+    .icon-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: rotateY(0deg);
+      transition: ease-in-out 0.5s;
       color: #efe6e6;
     }
 
@@ -102,12 +113,12 @@
       display: block;
       position: absolute;
       right: -3.5rem;
-      top: 2rem;
+      top: 3rem;
       border-radius: 8px 0 0 8px;
       padding: 1rem 0;
       width: 350px;
       background: #9f026df8;
-      transition: linear 5s;
+      transition: width 0.5s ease-in-out;
     }
   }
   

@@ -50,14 +50,14 @@ const ConnectForm = () => {
           setNameErrorMessage('');
         }
 
-        if (message.trim() ==='' || message.trim().length <= 3) {
+        if (message.trim() ==='' || message.length <= 3) {
           setError(true);
           setMessageErrorMessage('Vänligen skriv ditt meddelande');
         } else {
           setError(false);
           setMessageErrorMessage('');
         }
-      } else if (regex.test(email) && name.trim() !== '' && message.trim() !== '') {
+      } else if (!error && regex.test(email) && name.trim() !== '' && message.length >= 4) {
         setLoading(true);
         setError(false)
         setTimeout(() => {
