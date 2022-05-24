@@ -7,35 +7,35 @@ const Training = () => {
         <div className='content'>
           <h1>Träning av assistanshundar</h1>
           <div className='one-pic'>
-            <img src={require('../images/herofb1.jpg')} alt="" />
+            <img src={require('../images/herofb1.jpg')} alt="Assistanshund ligger på golvet" />
           </div>
 
           <div className='two-pics'>
             <div className='training-dog'>
               <div className='training-img'>
-                <img src={require('../images/hero.jpg')} alt="" />
+                <img src={require('../images/hero.jpg')} alt="Assistanshund sitter och tittar upp mot kameran" />
               </div>
             </div>
             <div className='training-dog'>
               <div className='training-img'>
-                <img src={require('../images/clarkkent.jpg')} alt="" />
+                <img src={require('../images/clarkkent.jpg')} alt="Assistanshund framifrån" />
               </div>
             </div>
           </div>
           <div className='three-pics'>
             <div className='training-dog'>
               <div className='training-img'>
-                <img src={require('../images/hero.jpg')} alt="" />
+                <img src={require('../images/hero.jpg')} alt="Assistanshund sitter och tittar upp mot kameran" />
               </div>
             </div>
             <div className='training-dog'>
               <div className='training-img'>
-                <img src={require('../images/Charlie.jpg')} alt="" />
+                <img src={require('../images/Charlie.jpg')} alt="Assistanshund sitter och tittar snett framåt" />
               </div>
             </div>
             <div className='training-dog'>
               <div className='training-img'>
-                <img src={require('../images/clarkkent.jpg')} alt="" />
+                <img src={require('../images/clarkkent.jpg')} alt="Assistanshund framifrån" />
               </div>
             </div>
           </div>
