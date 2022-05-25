@@ -40,7 +40,7 @@ const Dogs = () => {
                 <h3>Servicehund för personer med synnedsättning</h3>
                 <p>Hjälper sin ägare att ta sig fram runt hinder och är även en servicehund samtidigt. För personer som inte är gravt synskadade så de är berättigade till en ledarhund.</p>
               </li>
-              <li className='dogs-list-item'>
+              <li className='dogs-list-item short-text'>
                 <h3>Assistanshund för psykisk hälsa</h3>
                 <p>Hjälper och stöttar sin ägare i jobbiga situationer så som för mycket folk, läkarbesök mm.</p>
               </li>
