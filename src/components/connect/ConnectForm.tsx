@@ -67,7 +67,6 @@ const ConnectForm = () => {
         console.log('Namn: ' + name + ' | E-post: ' + email + ' | Meddelande: ' + message);
         e.target.reset();
       }
-      
     }
   }
 
@@ -121,7 +120,6 @@ const ConnectForm = () => {
           <div className='btn-center'>
             <button type='submit' className='btn'>Skicka</button>
           </div>
-          
         </form> 
       }
       {
@@ -135,7 +133,6 @@ const ConnectForm = () => {
           <h3>Tack för ditt meddelande!</h3>
         </div>
       }
-      
     </div>
   )
 }
