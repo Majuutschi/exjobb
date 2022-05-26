@@ -11,33 +11,33 @@ const Dogs = () => {
             <p>Assistanshundar är ett ord för flera olika hundar. Det finns:</p>
 
             <ul className='dogs-list'>
-              <div className='dogs-img img-a'>
+              <li className='dogs-img img-a'>
                 <img src={require('../images/dog12.jpg')} alt="Assistanshund sitter på golvet" />
-              </div>
-              <div className='dogs-img img-a-small'>
+              </li>
+              <li className='dogs-img img-a-small'>
                 <img src={require('../images/dog3.jpg')} alt="Assistanshund sitter och tittar mot kameran" />
-              </div>
+              </li>
               <li className='dogs-list-item long-text-c'>
-                <h3>Servicehundar</h3>
+                <h2>Servicehundar</h2>
                 <p>Hjälper funktionsnedsatta med att hämta saker, öppna och stänga dörrar mm.</p> 
-                <h3>Signalhundar</h3>
+                <h2>Signalhundar</h2>
                 <p>Hjälper de som är hörselskadade med att höra olika ljud. T.ex. om någon ropar, telefonen ringer eller om någon ringer på dörren, brandlarmet mm.</p>
               </li>
 
               <li className='dogs-list-item long-text-b'>
-                <h3>Alarmerande assistanshundar</h3>
-                <h4>Diabeteshundar</h4>
+                <h2>Alarmerande assistanshundar</h2>
+                <h3>Diabeteshundar</h3>
                 <p>Larmar sin ägare vid antingen för lågt eller för högt blodsocker eller både och. Hunden känner doften från ägarens mun och puttar på ägaren så den kan ta medicin eller något att äta.</p>
-                <h4>Epilepsihundar</h4>
+                <h3>Epilepsihundar</h3>
                 <p>Larmar vid anfall. Ibland även innan ett anfall.</p>
               </li>
-              <div className='dogs-img img-b'>
+              <li className='dogs-img img-b'>
                 <img src={require('../images/dog2.jpg')} alt="Assistanshund sitter utomhus" />
-              </div>
+              </li>
               <li className='dogs-list-item long-text-a'>
-                <h3>Ledarhundar</h3>
+                <h2>Ledarhundar</h2>
                 <p>Hjälper de synskadade i att leda dem förbi hinder och hitta olika platser.</p>
-                <h3>Servicehund för personer med synnedsättning</h3>
+                <h2>Servicehund för personer med synnedsättning</h2>
                 <p>Hjälper sin ägare att ta sig fram runt hinder och är även en servicehund samtidigt. För personer som inte är gravt synskadade så de är berättigade till en ledarhund.</p>
               </li>
               <li className='dogs-list-item short-text'>

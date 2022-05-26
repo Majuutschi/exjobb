@@ -13,7 +13,7 @@ const Home = () => {
                 <img src={require('../images/herofb2.jpg')} alt="" />
               </div>
               <div className='choice-title'>
-                <h4>Assistanshundar</h4> 
+                <h2>Assistanshundar</h2> 
               </div>
             </NavLink>
           </div>
@@ -23,7 +23,7 @@ const Home = () => {
                 <img src={require('../images/hunddagis11.jpg')} alt="" />
               </div>
               <div className='choice-title'>
-                <h4>Hunddagis och hundpensionat</h4>
+                <h2>Hunddagis och hundpensionat</h2>
               </div>
             </NavLink>
           </div>

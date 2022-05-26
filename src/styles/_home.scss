@@ -53,6 +53,10 @@
 .choice-title {
   text-align: center;
   margin-top: 1rem;
+
+  h2 {
+    font-size: 1.25rem;
+  }
 }
 
 
@@ -60,6 +64,12 @@
   .home-choice {
     margin-top: 1.5rem;
     padding: 1.5rem;
+  }
+
+  .choice-title {
+    h2 {
+      font-size: 1.4rem;
+    }
   }
 
 }
