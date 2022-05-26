@@ -17,7 +17,7 @@
 }
 
 .dogs-text {
-  padding: 0 2rem;
+  padding: 0 1rem;
 
   p {
     margin-left: 1rem;
@@ -43,13 +43,13 @@
     border-radius: 8px;
   
     h3 {
-      font-size: 1.3rem;
+      font-size: 1.35rem;
       text-align: center;
       margin: 0.5rem 0;
     }
 
     h4 {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       margin-top: 1rem;
       margin-bottom: 0.3rem;
     }
@@ -78,7 +78,6 @@
     grid-row-end: 3;
   }
 
-
   .dogs-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -87,15 +86,20 @@
     padding-left: 0.5rem;
     margin-bottom: 1rem;
 
-    h4 {
-      margin-top: 1rem;
-      text-align: center;
-    }
-
     .dogs-list-item {
       box-shadow: 1px 1px 8px #84018463;
       padding: 1rem;
       margin-bottom: 0.5rem;
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      h4 {
+        font-size: 1.1rem;
+        margin-top: 0.8rem;
+        text-align: center;
+      }
     }
   }
 
@@ -108,6 +112,15 @@
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 3;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .dogs-text {
+    p {
+      font-size: 1rem;
+    }
   }
 }
 
