@@ -8,7 +8,7 @@ const Dogs = () => {
           <h1>Assistanshundar</h1>
 
           <div className='dogs-text'>
-            <p>Assistanshundar är ett ord för flera olika hundar. Det finns:</p>
+            <h2>Assistanshundar är ett ord för flera olika hundar. Det finns:</h2>
 
             <ul className='dogs-list'>
               <li className='dogs-img img-a'>
@@ -41,7 +41,7 @@ const Dogs = () => {
                 <p>Hjälper sin ägare att ta sig fram runt hinder och är även en servicehund samtidigt. För personer som inte är gravt synskadade så de är berättigade till en ledarhund.</p>
               </li>
               <li className='dogs-list-item short-text'>
-                <h3>Assistanshund för psykisk hälsa</h3>
+                <h2>Assistanshund för psykisk hälsa</h2>
                 <p>Hjälper och stöttar sin ägare i jobbiga situationer så som för mycket folk, läkarbesök mm.</p>
               </li>
             </ul>
