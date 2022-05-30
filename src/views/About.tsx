@@ -7,7 +7,7 @@ const About = () => {
         <h1>Om mig</h1>
         <div className='about-content'>
           <div className='about-img'>
-            <img src={require('../images/about1.jpg')} alt="" />
+            <img src={require('../images/about1.jpg')} alt="Ingela med en hund." />
           </div>
           <div className='about-text'>
             <p>

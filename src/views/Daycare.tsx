@@ -5,10 +5,10 @@ const Daycare = () => {
     <div className='container'>
       <div className='content'>
         <div className='daycare-image'>
-          <img className='daycare-big-img' src={require('../images/hunddagis.jpg')} alt="" />
-          <img className='daycare-small-img' src={require('../images/hunddagis21.jpg')} alt="" />
-          <img className='daycare-both-img' src={require('../images/hunddagis11.jpg')} alt="" />
-          <img className='daycare-both-img' src={require('../images/hunddagis22.jpg')} alt="" />
+          <img className='daycare-big-img' src={require('../images/hunddagis.jpg')} alt="Två hundar utanför hunddagiset." />
+          <img className='daycare-small-img' src={require('../images/hunddagis21.jpg')} alt="Två hundar ligger på marken och vilar utomhus." />
+          <img className='daycare-both-img' src={require('../images/hunddagis11.jpg')} alt="Två hundar utanför hunddagiset." />
+          <img className='daycare-both-img' src={require('../images/hunddagis22.jpg')} alt="Två hundar ligger på marken och vilar utomhus." />
         </div>
         <div className='daycare-content'>
           <h1>Gårdesta hunddagis och hundpensionat</h1>
