@@ -2,7 +2,6 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-// import { NavHashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
