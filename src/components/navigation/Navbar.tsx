@@ -64,6 +64,7 @@ const Navbar = () => {
             <li><NavLink to={'/videos'}>Assistanshund&shy;beteenden</NavLink></li>
             <li><NavLink to={'/training'}>Träning av assistanshundar</NavLink></li>
             <li><NavLink to={'/daycare'}>Hunddagis och hundpensionat</NavLink></li>
+            <li><NavLink to={'/about'}>Om mig</NavLink></li>
             <li className='last'><NavLink to={'/connect'}>Kontakt</NavLink></li>
           </ul>
         </div>
